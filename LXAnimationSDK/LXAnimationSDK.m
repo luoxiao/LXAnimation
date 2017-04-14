@@ -10,4 +10,11 @@
 
 @implementation LXAnimationSDK
 
+- (void)log
+{
+    NSLog(@"log log");
+
+}
+
+
 @end

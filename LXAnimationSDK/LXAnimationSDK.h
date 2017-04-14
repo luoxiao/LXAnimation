@@ -10,4 +10,6 @@
 
 @interface LXAnimationSDK : NSObject
 
+- (void)log;
+
 @end
