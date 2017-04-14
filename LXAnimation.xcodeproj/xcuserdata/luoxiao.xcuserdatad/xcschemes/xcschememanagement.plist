@@ -9,10 +9,20 @@
 			<key>orderHint</key>
 			<integer>0</integer>
 		</dict>
+		<key>LXAnimationSDK.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>1</integer>
+		</dict>
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
 		<key>39543C4A1EA0D4E100908E13</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>39543C681EA0D60F00908E13</key>
 		<dict>
 			<key>primary</key>
 			<true/>

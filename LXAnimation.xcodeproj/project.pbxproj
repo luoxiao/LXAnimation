@@ -13,7 +13,22 @@
 		39543C591EA0D4E100908E13 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 39543C571EA0D4E100908E13 /* Main.storyboard */; };
 		39543C5B1EA0D4E100908E13 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 39543C5A1EA0D4E100908E13 /* Assets.xcassets */; };
 		39543C5E1EA0D4E100908E13 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 39543C5C1EA0D4E100908E13 /* LaunchScreen.storyboard */; };
+		39543C6D1EA0D60F00908E13 /* LXAnimationSDK.m in Sources */ = {isa = PBXBuildFile; fileRef = 39543C6C1EA0D60F00908E13 /* LXAnimationSDK.m */; };
+		39543C6E1EA0D60F00908E13 /* LXAnimationSDK.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 39543C6B1EA0D60F00908E13 /* LXAnimationSDK.h */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		39543C671EA0D60F00908E13 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "include/$(PRODUCT_NAME)";
+			dstSubfolderSpec = 16;
+			files = (
+				39543C6E1EA0D60F00908E13 /* LXAnimationSDK.h in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		39543C4B1EA0D4E100908E13 /* LXAnimation.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LXAnimation.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -26,10 +41,20 @@
 		39543C5A1EA0D4E100908E13 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		39543C5D1EA0D4E100908E13 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		39543C5F1EA0D4E100908E13 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		39543C691EA0D60F00908E13 /* libLXAnimationSDK.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libLXAnimationSDK.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		39543C6B1EA0D60F00908E13 /* LXAnimationSDK.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LXAnimationSDK.h; sourceTree = "<group>"; };
+		39543C6C1EA0D60F00908E13 /* LXAnimationSDK.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LXAnimationSDK.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		39543C481EA0D4E100908E13 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		39543C661EA0D60F00908E13 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -43,6 +68,7 @@
 			isa = PBXGroup;
 			children = (
 				39543C4D1EA0D4E100908E13 /* LXAnimation */,
+				39543C6A1EA0D60F00908E13 /* LXAnimationSDK */,
 				39543C4C1EA0D4E100908E13 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -51,6 +77,7 @@
 			isa = PBXGroup;
 			children = (
 				39543C4B1EA0D4E100908E13 /* LXAnimation.app */,
+				39543C691EA0D60F00908E13 /* libLXAnimationSDK.a */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -79,6 +106,15 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		39543C6A1EA0D60F00908E13 /* LXAnimationSDK */ = {
+			isa = PBXGroup;
+			children = (
+				39543C6B1EA0D60F00908E13 /* LXAnimationSDK.h */,
+				39543C6C1EA0D60F00908E13 /* LXAnimationSDK.m */,
+			);
+			path = LXAnimationSDK;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -99,6 +135,23 @@
 			productReference = 39543C4B1EA0D4E100908E13 /* LXAnimation.app */;
 			productType = "com.apple.product-type.application";
 		};
+		39543C681EA0D60F00908E13 /* LXAnimationSDK */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 39543C711EA0D60F00908E13 /* Build configuration list for PBXNativeTarget "LXAnimationSDK" */;
+			buildPhases = (
+				39543C651EA0D60F00908E13 /* Sources */,
+				39543C661EA0D60F00908E13 /* Frameworks */,
+				39543C671EA0D60F00908E13 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = LXAnimationSDK;
+			productName = LXAnimationSDK;
+			productReference = 39543C691EA0D60F00908E13 /* libLXAnimationSDK.a */;
+			productType = "com.apple.product-type.library.static";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -109,6 +162,10 @@
 				ORGANIZATIONNAME = "罗潇";
 				TargetAttributes = {
 					39543C4A1EA0D4E100908E13 = {
+						CreatedOnToolsVersion = 8.3;
+						ProvisioningStyle = Automatic;
+					};
+					39543C681EA0D60F00908E13 = {
 						CreatedOnToolsVersion = 8.3;
 						ProvisioningStyle = Automatic;
 					};
@@ -128,6 +185,7 @@
 			projectRoot = "";
 			targets = (
 				39543C4A1EA0D4E100908E13 /* LXAnimation */,
+				39543C681EA0D60F00908E13 /* LXAnimationSDK */,
 			);
 		};
 /* End PBXProject section */
@@ -153,6 +211,14 @@
 				39543C561EA0D4E100908E13 /* ViewController.m in Sources */,
 				39543C531EA0D4E100908E13 /* AppDelegate.m in Sources */,
 				39543C501EA0D4E100908E13 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		39543C651EA0D60F00908E13 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				39543C6D1EA0D60F00908E13 /* LXAnimationSDK.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -292,6 +358,24 @@
 			};
 			name = Release;
 		};
+		39543C6F1EA0D60F00908E13 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		39543C701EA0D60F00908E13 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -309,6 +393,15 @@
 			buildConfigurations = (
 				39543C631EA0D4E100908E13 /* Debug */,
 				39543C641EA0D4E100908E13 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		39543C711EA0D60F00908E13 /* Build configuration list for PBXNativeTarget "LXAnimationSDK" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				39543C6F1EA0D60F00908E13 /* Debug */,
+				39543C701EA0D60F00908E13 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 		};
